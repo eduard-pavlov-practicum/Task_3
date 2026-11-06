@@ -2,7 +2,7 @@ import json
 import requests
 import allure
 from faker import Faker
-from helpers.constants import REGISTER, USER
+from helpers.urls import REGISTER, USER
 
 fake = Faker('ru_RU')
 

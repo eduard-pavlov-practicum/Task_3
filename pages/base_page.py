@@ -1,9 +1,11 @@
+import allure
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.common.exceptions import NoSuchElementException
-from locators.base import SPINNER
+from typing import Optional
+from locators.base import SPINNER, FEED_LINK, PERSONAL_ACCOUNT_LINK, CONSTRUCTOR_LINK
 
 WAIT_TIMEOUT = 3
 
@@ -48,10 +50,23 @@ class BasePage:
     def wait_change_url(self, url: str):
         self.wait.until(expected_conditions.url_to_be(url))
 
-    def is_open_(self, url, locator) -> bool:
+    def _is_open(self, url: str, locator: Optional[tuple] = None) -> bool:
         try:
-            self.wait_change_url(url)
-            self.find_element_with_scroll(locator)
-            return True
+            if locator:
+                self.find_element_with_scroll(locator)
+            return True and self.driver.current_url == url
         except TimeoutError, NoSuchElementException:
             return False
+
+    def navigate_to_constructor(self):
+        with allure.step('Кликнуть "Конструктор" в шапке'):
+            self.click_element(self.find_element_with_scroll(CONSTRUCTOR_LINK))
+
+    def navigate_to_feed(self):
+        with allure.step('Кликнуть "Лента Заказов" в шапке'):
+            self.click_element(self.find_element_with_scroll(FEED_LINK))
+
+    def navigate_to_personal_account(self):
+        with allure.step('Кликнуть "Личный Кабинет" в шапке'):
+            self.click_element(
+                self.find_element_with_scroll(PERSONAL_ACCOUNT_LINK))

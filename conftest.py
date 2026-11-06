@@ -1,9 +1,12 @@
 import pytest
 import allure
 from selenium import webdriver
-from helpers.constants import BASE_URL
+from helpers.urls import BASE_URL
+from helpers.helpers import generate_random_user_data, register_user, delete_registered_user
 from pages.login_page import LoginPage
 from pages.forgot_password_page import ForgotPasswordPage
+from pages.constructor_page import ConstructorPage
+from pages.profile_page import ProfilePage
 
 
 def pytest_addoption(parser):
@@ -64,16 +67,59 @@ def quit_driver(driver):
 
 
 @pytest.fixture
+def unique_user_payload():
+    return generate_random_user_data()
+
+
+@pytest.fixture
+def registered_user(unique_user_payload):
+
+    response = register_user(unique_user_payload)
+    data = response.json()
+
+    unique_user_payload["accessToken"] = data.get("accessToken")
+
+    yield unique_user_payload
+
+    token = unique_user_payload.get("accessToken")
+    if token:
+        delete_registered_user(token)
+
+
+@pytest.fixture
+def log_in_account(login_page, registered_user):
+    login_page.login(registered_user['email'], registered_user['password'])
+    return login_page
+
+
+@pytest.fixture
+def constructor_page(log_in_account):
+    constructor_page = ConstructorPage(log_in_account.driver)
+    constructor_page.wait_open()
+    return constructor_page
+
+
+@pytest.fixture
+def profile_page(constructor_page):
+    constructor_page.navigate_to_personal_account()
+    profile_page = ProfilePage(constructor_page.driver)
+    profile_page.wait_open()
+    return profile_page
+
+
+@pytest.fixture
 @allure.step('Кликнуть "Личный кабинет" на главной странице')
 def login_page(driver):
     login_page = LoginPage(driver)
     login_page.open()
+
     return login_page
 
 
 @pytest.fixture
 @allure.step('Кликнуть "Восстановить пароль" на странице логина в Личный кабинет')
-def forgot_password_page(login_page, driver):
+def forgot_password_page(login_page):
     login_page.click_forgot_password_link()
-    forgot_password_page = ForgotPasswordPage(driver)
+    forgot_password_page = ForgotPasswordPage(login_page.driver)
+
     return forgot_password_page
