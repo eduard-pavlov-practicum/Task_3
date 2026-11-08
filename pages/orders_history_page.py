@@ -19,6 +19,6 @@ class OrderHistoryPage(BasePage):
         return self.driver.find_elements(*OrderHistoryLocators.ORDER_NUMBERS)
 
     def get_order_numbers(self) -> List[str]:
-        """Возвращает номера заказов (в формате '#019238') из истории заказов пользователя."""
+        """Возвращает номера заказов из истории заказов пользователя."""
         orders = self.find_orders()
         return [order.text for order in orders]

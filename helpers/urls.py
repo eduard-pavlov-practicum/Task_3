@@ -8,7 +8,13 @@ CONSTRUCTOR_URL = f'{BASE_URL}/'
 LOGIN_URL = f'{BASE_URL}/login'
 PROFILE_URL = f'{BASE_URL}/account/profile'
 ORDER_HISTORY_URL = f'{BASE_URL}/account/order-history'
+FEED_URL = f'{BASE_URL}/feed'
 
 # API urls
-REGISTER = f"{API_BASE_URL}/auth/register"
-USER = f"{API_BASE_URL}/auth/user"
+REGISTER_API_URL = f"{API_BASE_URL}/auth/register"
+USER_API_URL = f"{API_BASE_URL}/auth/user"
+INGREDIENTS_API_URL = f'{API_BASE_URL}/ingredients'
+
+
+def ingredient_card_url(ingredient_url):
+    return f'{BASE_URL}{ingredient_url}'

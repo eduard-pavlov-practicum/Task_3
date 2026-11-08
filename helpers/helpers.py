@@ -2,7 +2,7 @@ import json
 import requests
 import allure
 from faker import Faker
-from helpers.urls import REGISTER, USER
+from helpers.urls import REGISTER_API_URL, USER_API_URL, INGREDIENTS_API_URL
 
 fake = Faker('ru_RU')
 
@@ -20,13 +20,18 @@ def generate_random_user_data():
 
 @allure.step('Создаем нового пользователя')
 def register_user(user_data):
-    return api_client.post(REGISTER, json=user_data)
+    return api_client.post(REGISTER_API_URL, json=user_data)
 
 
 @allure.step('Удаляем созданного пользователя')
 def delete_registered_user(token: str):
     headers = {"Authorization": token}
-    api_client.delete(USER, headers=headers)
+    api_client.delete(USER_API_URL, headers=headers)
+
+
+@allure.step('Получаем список ингредиентов')
+def get_ingredients() -> requests.Response:
+    return api_client.get(INGREDIENTS_API_URL)
 
 
 class ApiClient(requests.Session):

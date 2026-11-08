@@ -2,7 +2,7 @@ import pytest
 import allure
 from selenium import webdriver
 from helpers.urls import BASE_URL
-from helpers.helpers import generate_random_user_data, register_user, delete_registered_user
+from helpers.helpers import generate_random_user_data, register_user, delete_registered_user, get_ingredients
 from pages.login_page import LoginPage
 from pages.forgot_password_page import ForgotPasswordPage
 from pages.constructor_page import ConstructorPage
@@ -123,3 +123,16 @@ def forgot_password_page(login_page):
     forgot_password_page = ForgotPasswordPage(login_page.driver)
 
     return forgot_password_page
+
+
+@pytest.fixture(scope='session')
+def ingredients():
+
+    response = get_ingredients()
+    ingredients = response.json()['data']
+
+    grouped_data = {}
+    for ingredient in ingredients:
+        grouped_data.setdefault(ingredient['type'], []).append(ingredient)
+
+    return grouped_data

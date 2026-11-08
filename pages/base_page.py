@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from typing import Optional
 from locators.base import SPINNER, FEED_LINK, PERSONAL_ACCOUNT_LINK, CONSTRUCTOR_LINK
 
@@ -55,7 +55,7 @@ class BasePage:
             if locator:
                 self.find_element_with_scroll(locator)
             return True and self.driver.current_url == url
-        except TimeoutError, NoSuchElementException:
+        except TimeoutException, NoSuchElementException:
             return False
 
     def navigate_to_constructor(self):
