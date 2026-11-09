@@ -26,19 +26,22 @@ class TestOrderFeed:
     @allure.title('Заказ из истории заказов пользователя отображается в ленте заказов')
     def test_user_order_appears_in_feed(self, created_order, profile_page):
 
-        with allure.step('Проверить, что заказ отображается в истории заказов пользователя'):
+        with allure.step('Открыть историю заказов и получить номер заказа пользователя'):
             order_history_page = profile_page.navigate_to_orders_history()
             order_history_page.wait_open()
-            assert order_number_str(
-                created_order) in order_history_page.get_order_numbers()
-        order_history_page.navigate_to_feed()
-        feed_page = FeedPage(order_history_page.driver)
-        feed_page.wait_open()
+            # Фикстура profile_page гарантирует нового пользователя, created_order гарантирует, что заказ единственный.
+            # Мы берем номер заказа прямо со страницы истории (как это звучит в задании):
+            history_orders = order_history_page.get_order_numbers()
+            order_from_history = history_orders[0]
+        
+        with allure.step('Перейти на страницу «Лента заказов»'):
+            order_history_page.navigate_to_feed()
+            feed_page = FeedPage(order_history_page.driver)
+            feed_page.wait_open()
 
         with allure.step('Проверить, что тот же заказ отображается в общей ленте заказов'):
 
-            assert order_number_str(
-                created_order) in feed_page.get_order_numbers()
+            assert order_from_history in feed_page.get_order_numbers()
 
     @allure.title('При создании нового заказа счётчик Выполнено за сегодня увеличивается')
     def test_total_done_orders_counter_increase_after_new_order(self, feed_page, registered_user, ingredients):

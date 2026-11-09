@@ -55,16 +55,16 @@ class TestCoreFunctionality:
     def test_add_ingredient_increases_counter(self, constructor_page, ingredients):
         ingredient_name = ingredients['main'][0]['name']
 
-        with allure.step('Проверить, что количество ингредиента равно 0'):
-            assert constructor_page.get_ingredient_counter(
-                ingredient_name) == 0
+        with allure.step('Получаем количество ингредиента'):
+            ingredient_quantity = constructor_page.get_ingredient_counter(
+                ingredient_name)
 
         with allure.step(f'Перетащить ингредиент "{ingredient_name}" в конструктор'):
             constructor_page.add_ingredient_to_constructor(ingredient_name)
 
-        with allure.step('Проверить, что каунтер ингредиента увеличился до 1'):
+        with allure.step('Проверить, что каунтер ингредиента увеличился на 1'):
             assert constructor_page.get_ingredient_counter(
-                ingredient_name) == 1
+                ingredient_name) == ingredient_quantity + 1
 
     @allure.title('Залогиненный пользователь может оформить заказ')
     def test_logged_in_user_can_create_order(self, constructor_page, ingredients):
