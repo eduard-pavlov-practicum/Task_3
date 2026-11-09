@@ -22,7 +22,6 @@ class TestCoreFunctionality:
         constructor_page = ConstructorPage(driver)
         constructor_page.navigate_to_feed()
         feed_page = FeedPage(constructor_page.driver)
-        feed_page.wait_open()
 
         with allure.step('Проверить, что открылась лента заказов'):
             assert feed_page.is_open()
@@ -35,7 +34,6 @@ class TestCoreFunctionality:
         with allure.step(f'Кликнуть на ингредиент "{ingredient_name}"'):
             ingredient_view = constructor_page.open_ingredient_details(
                 ingredient_name)
-            ingredient_view.wait_open()
 
         with allure.step('Проверить, что всплывающее окно с деталями именно этого ингредиента'):
             assert ingredient_view.is_open()

@@ -15,6 +15,7 @@ class IngredientDetailsView(BasePage):
         self.wait_change_url(self.ingredient_url)
 
     def is_open(self) -> bool:
+        self.wait_open()
         return self._is_open(self.ingredient_url, IngredientDetailsViewLocators.TITLE)
 
     def get_ingredient_name(self) -> str:

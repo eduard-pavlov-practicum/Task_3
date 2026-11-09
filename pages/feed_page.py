@@ -14,6 +14,7 @@ class FeedPage(BasePage):
         return self
 
     def is_open(self) -> bool:
+        self.wait_open()
         return self._is_open(FEED_URL, FeedLocators.ORDER_CARDS)
 
     def get_order_numbers(self) -> list[str]:
