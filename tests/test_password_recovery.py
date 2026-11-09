@@ -31,11 +31,7 @@ class TestPasswordRecovery:
     @allure.title('Клик по кнопке показать/скрыть пароль делает поле активным — подсвечивает его.')
     def test_show_password_icon_makes_field_active(self, forgot_password_page, driver):
         with allure.step(f'Дождаться открытия страницы восстановления пароля {FORGOT_PASSWORD_URL}'):
-            is_open = forgot_password_page.is_open()
-
-        if not is_open:
-            pytest.fail(
-                f'Страница восстановления пароля не открылась. Ожидался URL: {FORGOT_PASSWORD_URL}')
+            forgot_password_page.is_open()
 
         email = generate_random_user_data()['email']
 

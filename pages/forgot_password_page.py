@@ -7,6 +7,7 @@ class ForgotPasswordPage(BasePage):
     """Page Object страницы /forgot-password."""
 
     def is_open(self) -> bool:
+        self.wait_change_url(FORGOT_PASSWORD_URL)
         return self._is_open(FORGOT_PASSWORD_URL, ForgotPasswordLocators.HEADING)
 
     def enter_email(self, email: str):
