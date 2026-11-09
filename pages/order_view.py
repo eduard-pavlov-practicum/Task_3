@@ -15,8 +15,3 @@ class OrderView(BasePage):
 
     def get_order_number(self) -> str:
         return self.find_element_with_scroll(OrderViewLocators.ORDER_NUMBER).text
-
-    def close(self) -> None:
-        self.click_element(self.find_element_with_scroll(
-            OrderViewLocators.CLOSE_BUTTON))
-        self.wait_element_invisible(OrderViewLocators.ORDER_ID_LABEL)

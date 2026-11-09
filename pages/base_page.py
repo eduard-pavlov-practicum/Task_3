@@ -8,6 +8,8 @@ from typing import Optional
 from locators.base import SPINNER, FEED_LINK, PERSONAL_ACCOUNT_LINK, CONSTRUCTOR_LINK
 
 WAIT_TIMEOUT = 3
+UPDATE_TIMEOUT = 10.0
+POLL_FREQUENCY = 1
 
 
 class BasePage:
@@ -44,9 +46,6 @@ class BasePage:
         element = self.find_element_with_scroll(locator)
         element.send_keys(value)
 
-    def find_element_in_block(self, block: WebElement, locator: tuple) -> WebElement:
-        return self.scroll_to_element(block.find_element(*locator))
-
     def wait_change_url(self, url: str):
         self.wait.until(expected_conditions.url_to_be(url))
 
@@ -70,3 +69,7 @@ class BasePage:
         with allure.step('Кликнуть "Личный Кабинет" в шапке'):
             self.click_element(
                 self.find_element_with_scroll(PERSONAL_ACCOUNT_LINK))
+
+    def wait_until(self, condition, timeout: float = UPDATE_TIMEOUT, poll_frequency: float = POLL_FREQUENCY) -> None:
+        WebDriverWait(self.driver, timeout,
+                      poll_frequency=poll_frequency).until(condition)

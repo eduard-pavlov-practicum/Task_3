@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 class ConstructorLocators:
     """Локаторы главной страницы /."""
 
-    BUN_DROP_ZONE = (By.CSS_SELECTOR, '[class*="constructor-element_pos_top"]')
-    # Зона, куда перетаскиваются начинки и соусы (изначально пустой <span>, заполняется после добавления)
     CONSTRUCTOR_BASKET_SECTION = (
         By.XPATH, '//section[contains(@class, "BurgerConstructor_basket")]')
 

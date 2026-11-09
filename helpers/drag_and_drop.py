@@ -1,6 +1,6 @@
 from selenium.webdriver import Remote
 from selenium.webdriver.remote.webelement import WebElement
-# Скрипт, который имитирует события DragStart, DragOver, Drop
+# ИИ. Скрипт, который имитирует события DragStart, DragOver, Drop
 js_script = """
     var src = arguments[0], tgt = arguments[1];
     var dataTransfer = new DataTransfer();

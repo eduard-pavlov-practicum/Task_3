@@ -2,11 +2,12 @@ import pytest
 import allure
 from selenium import webdriver
 from helpers.urls import BASE_URL
-from helpers.helpers import generate_random_user_data, register_user, delete_registered_user, get_ingredients
+from helpers.helpers import generate_random_user_data, register_user, delete_registered_user, get_ingredients, create_order
 from pages.login_page import LoginPage
 from pages.forgot_password_page import ForgotPasswordPage
 from pages.constructor_page import ConstructorPage
 from pages.profile_page import ProfilePage
+from pages.feed_page import FeedPage
 
 
 def pytest_addoption(parser):
@@ -14,7 +15,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--browser",
         action="store",
-        default="chrome",
+        default="firefox",
         help="Браузер для тестов: chrome или firefox",
     )
 
@@ -44,15 +45,13 @@ def driver(request):
 
 @allure.step('Открываем браузер Firefox')
 def init_firefox():
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
+    driver = webdriver.Firefox()
     return driver
 
 
 @allure.step('Открываем браузер Google Chrome')  # декоратор
 def init_chrome():
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome()
     return driver
 
 
@@ -136,3 +135,28 @@ def ingredients():
         grouped_data.setdefault(ingredient['type'], []).append(ingredient)
 
     return grouped_data
+
+
+@pytest.fixture
+@allure.step('Создать заказ для зарегистрированного пользователя')
+def created_order(registered_user, ingredients):
+    access_token = registered_user['accessToken']
+
+    bun_id = ingredients['bun'][0]['_id']
+    filling_id = ingredients['main'][0]['_id']
+    sauce_id = ingredients['sauce'][0]['_id']
+
+    response = create_order([bun_id, filling_id, sauce_id], access_token)
+    order_number = response.json()['order']['number']
+
+    return order_number
+
+
+@pytest.fixture
+@allure.step('Открыть ленту заказов')
+def feed_page(driver):
+    constructor_page = ConstructorPage(driver)
+    constructor_page.navigate_to_feed()
+    feed_page = FeedPage(constructor_page.driver)
+    feed_page.wait_open()
+    return feed_page

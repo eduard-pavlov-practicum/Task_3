@@ -1,7 +1,4 @@
 import allure
-import pytest
-from helpers.urls import LOGIN_URL
-from pages.orders_history_page import OrderHistoryPage
 from pages.login_page import LoginPage
 
 

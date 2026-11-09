@@ -1,4 +1,3 @@
-from selenium.webdriver.remote.webelement import WebElement
 from helpers.urls import RESET_PASSWORD_URL
 from locators.reset_password_locators import ResetPasswordLocators
 from pages.base_page import BasePage

@@ -1,4 +1,4 @@
-from locators.views_locators import IngredientDetailsViewLocators
+from locators.ingredient_details_locators import IngredientDetailsViewLocators
 from pages.base_page import BasePage
 
 
@@ -16,9 +16,6 @@ class IngredientDetailsView(BasePage):
 
     def is_open(self) -> bool:
         return self._is_open(self.ingredient_url, IngredientDetailsViewLocators.TITLE)
-
-    def get_title(self) -> str:
-        return self.find_element_with_scroll(IngredientDetailsViewLocators.TITLE).text
 
     def get_ingredient_name(self) -> str:
         return self.find_element_with_scroll(IngredientDetailsViewLocators.INGREDIENT_NAME).text

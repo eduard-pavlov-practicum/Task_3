@@ -14,7 +14,4 @@ FEED_URL = f'{BASE_URL}/feed'
 REGISTER_API_URL = f"{API_BASE_URL}/auth/register"
 USER_API_URL = f"{API_BASE_URL}/auth/user"
 INGREDIENTS_API_URL = f'{API_BASE_URL}/ingredients'
-
-
-def ingredient_card_url(ingredient_url):
-    return f'{BASE_URL}{ingredient_url}'
+ORDERS_API_URL = f'{API_BASE_URL}/orders'

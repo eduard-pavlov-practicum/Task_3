@@ -2,9 +2,14 @@ import json
 import requests
 import allure
 from faker import Faker
-from helpers.urls import REGISTER_API_URL, USER_API_URL, INGREDIENTS_API_URL
+from helpers.urls import REGISTER_API_URL, USER_API_URL, INGREDIENTS_API_URL, ORDERS_API_URL
 
 fake = Faker('ru_RU')
+
+
+def order_number_str(order_number: int) -> str:
+    """Преобразует номер заказа в формат '#012345'."""
+    return f'#{order_number:06d}'
 
 
 def generate_random_user_data():
@@ -32,6 +37,12 @@ def delete_registered_user(token: str):
 @allure.step('Получаем список ингредиентов')
 def get_ingredients() -> requests.Response:
     return api_client.get(INGREDIENTS_API_URL)
+
+
+@allure.step('Создать заказ с ингредиентами {ingredient_ids}')
+def create_order(ingredient_ids: list[str], token: str) -> requests.Response:
+    headers = {'Authorization': token} if token else {}
+    return api_client.post(ORDERS_API_URL, json={'ingredients': ingredient_ids}, headers=headers)
 
 
 class ApiClient(requests.Session):

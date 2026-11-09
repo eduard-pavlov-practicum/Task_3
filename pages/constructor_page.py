@@ -41,9 +41,6 @@ class ConstructorPage(BasePage):
             return 0
         return int(counter_text)
 
-    def get_total_price(self) -> int:
-        return int(self.find_element_with_scroll(ConstructorLocators.TOTAL_PRICE).text)
-
     def click_order_button(self) -> OrderView:
         self.click_element(self.find_element_with_scroll(
             ConstructorLocators.ORDER_BUTTON))
