@@ -22,7 +22,6 @@ class TestCoreFunctionality:
         constructor_page = ConstructorPage(driver)
         constructor_page.navigate_to_feed()
         feed_page = FeedPage(constructor_page.driver)
-        feed_page.wait_open()
 
         with allure.step('Проверить, что открылась лента заказов'):
             assert feed_page.is_open()
