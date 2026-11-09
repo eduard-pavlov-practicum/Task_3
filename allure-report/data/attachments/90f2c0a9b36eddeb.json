@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "kornilovluchezar@rambler.ru",
+    "name": "Прохор"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWM5NWU5MWNhMDAxYjIzOTQ1OCIsImlhdCI6MTc5NDE4Njk1MywiZXhwIjoxNzk0MTg4MTUzfQ.IdJjmIGYsC4jEYGYflT6lnZbHQPENwCqTRkhdaA_g5Y",
+  "refreshToken": "9c75b8702bd2e4b6aced4a85fafa5e1bed3c8f518191b263ec72a66fe8e121f6d089a8e94019a90b"
+}

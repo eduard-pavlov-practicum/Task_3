@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "potap_29@hotmail.com",
+    "name": "София"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMWNjNWU5MWNhMDAxYjIzOTg0NCIsImlhdCI6MTc5NDI1MzI2MCwiZXhwIjoxNzk0MjU0NDYwfQ.wOZJcktWItTZqZYyuzoLg79EwNfGZNsRIjm2I2DVPhU",
+  "refreshToken": "c551ab0dbc397e8e290bc4786f97fbf31fc582a237cf9ccde391924e8a4d5397034fa1e26f3f90db"
+}

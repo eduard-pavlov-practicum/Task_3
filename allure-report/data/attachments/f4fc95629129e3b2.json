@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "dsharapova@mail.ru",
+    "name": "Адам"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDY4NWU5MWNhMDAxYjIzOTQ2MSIsImlhdCI6MTc5NDE4NzM2OCwiZXhwIjoxNzk0MTg4NTY4fQ.L35kfdaVxWtKdhrdJe-wyXb8ylf1E66HZY3cAyU6Qtg",
+  "refreshToken": "b7ea025595b2528399cd3c1c16db7b1c23533ed9949240aa6306f0d9b62c9fcca4958c5a870a96fe"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "filimon_1990@rambler.ru",
+    "name": "Вероника"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjM5NWU5MWNhMDAxYjIzOTg1ZSIsImlhdCI6MTc5NDI1MzM2OSwiZXhwIjoxNzk0MjU0NTY5fQ.-iwRL7qPD7OJqeKPJOeWpPqHVcXr1nbNxNVDxySydJs",
+  "refreshToken": "20c4eb2d56c690b9611707013010208f56f4eeb6207541854f19f2b95136e766b545ae94fb0fc2d1"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "grigori22@hotmail.com",
+    "name": "Владилен"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMGM4NWU5MWNhMDAxYjIzOTQ3MiIsImlhdCI6MTc5NDE4NzQ2NCwiZXhwIjoxNzk0MTg4NjY0fQ.FTq1grldPRTKNY1afH_q2U_WesTfGSN1gILr-HIKhCE",
+  "refreshToken": "a5bdee1f2cb31526c122ffedaa687775143c1155e10eb043129d54c91c07defd592cc4a9cacd8248"
+}

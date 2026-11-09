@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "lora_2016@hotmail.com",
+    "name": "Касьян"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMThkNWU5MWNhMDAxYjIzOTgzYiIsImlhdCI6MTc5NDI1MzE5NywiZXhwIjoxNzk0MjU0Mzk3fQ.TFyZFtcOmkWxwt19OI188xJDa8wEj4XUjpSf67g8vu8",
+  "refreshToken": "df683fd4a23e2fa7a87dad33e7b03fbd789641e86305df9c81e301250019b0da04c586a561214518"
+}

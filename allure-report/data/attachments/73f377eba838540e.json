@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "frolustinov@yahoo.com",
+    "name": "Елисей"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWE3NWU5MWNhMDAxYjIzOTQ0ZiIsImlhdCI6MTc5NDE4NjkxOSwiZXhwIjoxNzk0MTg4MTE5fQ.Hdycrb5vYCVupdmVtltl-LUbtkZcnW2MT9uadeqyDEo",
+  "refreshToken": "4dd9f4e5eade6102b81fb215831960864c0a75a49d5b3445045b34494691a441f3d89dc197eeb0b3"
+}

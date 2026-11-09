@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "ippolit72@gmail.com",
+    "name": "Ия"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWMzNWU5MWNhMDAxYjIzOTQ1NSIsImlhdCI6MTc5NDE4Njk0NywiZXhwIjoxNzk0MTg4MTQ3fQ.PM2-gAJgsGyY0BZBNV8OgROsa8yVzUw3JzRDpTfDlMA",
+  "refreshToken": "23a9ccc267063b86478ee5bbabb7880d88392f0071e95ed50789702dc66d549011bbf8e96bb26d9a"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "samolovaleksandr@mail.ru",
+    "name": "Пелагея"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMGRlNWU5MWNhMDAxYjIzOTQ3OCIsImlhdCI6MTc5NDE4NzQ4NiwiZXhwIjoxNzk0MTg4Njg2fQ.i_2pjcgf2SFfIAN2AtGzGOUO3-YAjSLi8B0LJ5mERbQ",
+  "refreshToken": "06cd4ca24ae2e0aba7aaa69382afa29084bf1c15b0d153cd11ab4d397ab82b776ed2fb4b393be73b"
+}

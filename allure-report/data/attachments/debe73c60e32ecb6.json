@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "efim91@hotmail.com",
+    "name": "Изяслав"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMWMxNWU5MWNhMDAxYjIzOTg0MSIsImlhdCI6MTc5NDI1MzI0OSwiZXhwIjoxNzk0MjU0NDQ5fQ.hgnGAiywku7qk_oFRhyDVmXl9mSDdLhLInpt3Y0HSt8",
+  "refreshToken": "818df4b476edd758c58c602612d9a0affe461f4ff76f0d7936253b8b110b4776b8c00e455e464b59"
+}

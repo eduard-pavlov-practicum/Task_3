@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "leonid23@mail.ru",
+    "name": "Изот"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWNlNWU5MWNhMDAxYjIzOTQ1YiIsImlhdCI6MTc5NDE4Njk1OCwiZXhwIjoxNzk0MTg4MTU4fQ.3zI2TvHpx-kjJ51pI_9CPKmirTxKim5_MpNJDHrHwz4",
+  "refreshToken": "9e62848a9fcdffeb062bfda49ca3e3da283e887012fd17fc5992584b33863c2c3ddae54f5b4b8e6f"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "gostomisl_10@yahoo.com",
+    "name": "Евстафий"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMWI3NWU5MWNhMDAxYjIzOTgzZSIsImlhdCI6MTc5NDI1MzIzOSwiZXhwIjoxNzk0MjU0NDM5fQ.OwxNXUTfko8NmUdCfVZODW0RSUFNlMaWKKxIrHRO-QI",
+  "refreshToken": "d7ce199da0c4b8eba7b9a87589f72a11b834a0dd4ce030e9a8fde8cab16dab2f33eb1a33b5f1ea8a"
+}

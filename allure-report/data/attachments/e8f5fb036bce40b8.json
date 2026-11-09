@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "vlasovapelageja@gmail.com",
+    "name": "Александр"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDc2NWU5MWNhMDAxYjIzOTQ2NSIsImlhdCI6MTc5NDE4NzM4MiwiZXhwIjoxNzk0MTg4NTgyfQ.mfsY2N3ovOcGdW_Om3ZMSj4AZtFdnGKD0p_dRPx-d6Y",
+  "refreshToken": "cdd8afb632ee599923e67393dd1adc8e90fc07fa1b337b6d87f104a1e8299b999e262ab97c18c0fe"
+}

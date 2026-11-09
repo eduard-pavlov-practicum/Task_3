@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "german53@gmail.com",
+    "name": "Евграф"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDlkNWU5MWNhMDAxYjIzOTQ2ZiIsImlhdCI6MTc5NDE4NzQyMSwiZXhwIjoxNzk0MTg4NjIxfQ.dpZQ6YwwicBVim40N2AR8SbqqV6XFWP7u2RQKN3mtnI",
+  "refreshToken": "8df35da37b20cb33553b6aff516e0d2db479d41f578c87941ae1f70555f0b1a33cafeefd40b3c17a"
+}

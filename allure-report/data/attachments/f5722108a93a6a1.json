@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "glafirashubina@mail.ru",
+    "name": "Мокей"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjE1NWU5MWNhMDAxYjIzOTg1MiIsImlhdCI6MTc5NDI1MzMzMywiZXhwIjoxNzk0MjU0NTMzfQ.apYK-Xu3VXqjvK6qEkP1oqRKOZGvjCgxoNqkrInMi-U",
+  "refreshToken": "bc5027951e3a15c2657afb601aa5fd0b8142a97b2a2459b966b43de6445c593cd24e70cdda30f952"
+}

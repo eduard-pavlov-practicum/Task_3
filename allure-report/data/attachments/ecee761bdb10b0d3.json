@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "petrovaantonina@yandex.ru",
+    "name": "Клавдий"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjE5NWU5MWNhMDAxYjIzOTg1NSIsImlhdCI6MTc5NDI1MzMzNywiZXhwIjoxNzk0MjU0NTM3fQ.0iwzy39LQRjjaCzo9onPPxzLdLDJGVSObQLzT0-XqQg",
+  "refreshToken": "a4a4e1d80e6bf848bb9575384ef7d1bdda0908039af54a19e214676714cc6d5700dd4054d8cec659"
+}

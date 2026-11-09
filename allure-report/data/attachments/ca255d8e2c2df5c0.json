@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "bolshakovizjaslav@hotmail.com",
+    "name": "Елизавета"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDVkNWU5MWNhMDAxYjIzOTQ1ZSIsImlhdCI6MTc5NDE4NzM1NywiZXhwIjoxNzk0MTg4NTU3fQ._iI3spSiZ5Vo9k1RYSFWsTVkgqjJm8lv9CQAu3VhvV4",
+  "refreshToken": "4faca8a57046f29bff3423c81867dc5eb5f02b85599985182d8b157c1997fc677b491dec639fa02f"
+}
