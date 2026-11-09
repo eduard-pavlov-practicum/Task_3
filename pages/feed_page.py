@@ -17,7 +17,7 @@ class FeedPage(BasePage):
         return self._is_open(FEED_URL, FeedLocators.ORDER_CARDS)
 
     def get_order_numbers(self) -> list[str]:
-        return [element.text for element in self.driver.find_elements(*FeedLocators.ORDER_CARD_NUMBERS)]
+        return [element.text for element in self.find_elements(FeedLocators.ORDER_CARD_NUMBERS)]
 
     def open_first_order(self) -> OrderDetailsView:
         self.click_element(self.find_element_with_scroll(
@@ -31,7 +31,7 @@ class FeedPage(BasePage):
         return int(self.find_element_with_scroll(FeedLocators.TODAY_DONE_COUNT).text)
 
     def get_in_progress_order_numbers(self) -> list[str]:
-        return [element.text.strip() for element in self.driver.find_elements(*FeedLocators.IN_PROGRESS_ORDERS_LIST)]
+        return [element.text.strip() for element in self.find_elements(FeedLocators.IN_PROGRESS_ORDERS_LIST)]
 
     def wait_for_order_in_progress(self, order_number: str) -> bool:
         """

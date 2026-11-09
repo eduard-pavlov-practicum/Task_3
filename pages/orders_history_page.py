@@ -16,7 +16,7 @@ class OrdersHistoryPage(BasePage):
         return self._is_open(ORDER_HISTORY_URL)
 
     def find_orders(self):
-        return self.driver.find_elements(*OrdersHistoryLocators.ORDER_NUMBERS)
+        return self.find_elements(OrdersHistoryLocators.ORDER_NUMBERS)
 
     def get_order_numbers(self) -> List[str]:
         orders = self.find_orders()

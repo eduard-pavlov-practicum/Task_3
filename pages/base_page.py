@@ -54,7 +54,7 @@ class BasePage:
             if locator:
                 self.find_element_with_scroll(locator)
             return True and self.driver.current_url == url
-        except TimeoutException, NoSuchElementException:
+        except (TimeoutException, NoSuchElementException):
             return False
 
     def navigate_to_constructor(self):
@@ -73,3 +73,6 @@ class BasePage:
     def wait_until(self, condition, timeout: float = UPDATE_TIMEOUT, poll_frequency: float = POLL_FREQUENCY) -> None:
         WebDriverWait(self.driver, timeout,
                       poll_frequency=poll_frequency).until(condition)
+
+    def find_elements(self, locator: tuple) -> list[WebElement]:
+        return self.driver.find_elements(*locator)
