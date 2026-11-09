@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "rjurik_19@mail.ru",
+    "name": "Касьян"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZTlhNWU5MWNhMDAxYjIzOTQ0OCIsImlhdCI6MTc5NDE4NjkwNiwiZXhwIjoxNzk0MTg4MTA2fQ.v-0A28Kjtih42Qykd7s4RF7aVVd8aeb3W3Wl1PaGmuA",
+  "refreshToken": "f78eaa814590b2d1e8deb823a5765f80c31abe4416dab9c173aa2fc2d6b43d4a7e3b21a5cbba5643"
+}

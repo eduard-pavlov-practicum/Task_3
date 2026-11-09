@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "onufri_1979@yahoo.com",
+    "name": "Селиверст"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDg5NWU5MWNhMDAxYjIzOTQ2OSIsImlhdCI6MTc5NDE4NzQwMSwiZXhwIjoxNzk0MTg4NjAxfQ.CSdz1INXyOA1yts6CDEDCZFbwfaoje9dMGPhfU4dPuY",
+  "refreshToken": "8d5324a090ff9a3ff867feea8a52b99cad6dacbc3b2874fbaf896a1bb256b4b726b2305ed9cd184c"
+}

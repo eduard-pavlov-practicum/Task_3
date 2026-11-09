@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "mitofanignatov@yandex.ru",
+    "name": "Андроник"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZTkyNWU5MWNhMDAxYjIzOTQ0NCIsImlhdCI6MTc5NDE4Njg5OCwiZXhwIjoxNzk0MTg4MDk4fQ.gKz8SmmZVd4247mHLrxY2pv0Ld2drINebFyXc-TsW3g",
+  "refreshToken": "845a13cd529b4a312a9203008677069bcf8311514b3e68a93738726ab83c1e479b4a2bc496013f2c"
+}

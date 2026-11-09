@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "evseevatamara@yahoo.com",
+    "name": "Марина"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWFjNWU5MWNhMDAxYjIzOTQ1MiIsImlhdCI6MTc5NDE4NjkyNCwiZXhwIjoxNzk0MTg4MTI0fQ.BQjCjH-Mhyahys2fN-fRGYRWUabNHhTwzdIGSQVxrcI",
+  "refreshToken": "b1cdb43f34ed0fa9550fac7fc4a342f43f9361d1a9c54e005961b03ba608ffdff33353ba4142b2cc"
+}

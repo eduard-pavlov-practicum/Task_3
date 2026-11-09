@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "borisovaalevtina@rambler.ru",
+    "name": "Харлампий"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZWEzNWU5MWNhMDAxYjIzOTQ0YyIsImlhdCI6MTc5NDE4NjkxNSwiZXhwIjoxNzk0MTg4MTE1fQ.FUuWV72bK0fVZ7i8E2JE9q6dxzD_65w6r-ZSBOijvCs",
+  "refreshToken": "6e7f7ce0ca4c161b8e6a5d66a2845cce2125bdc655d9602f388b16f0331570a2646e76a698b02a3f"
+}

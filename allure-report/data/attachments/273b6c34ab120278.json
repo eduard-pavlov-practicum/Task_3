@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "raisakrasilnikova@gmail.com",
+    "name": "Фока"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMDkzNWU5MWNhMDAxYjIzOTQ2YyIsImlhdCI6MTc5NDE4NzQxMSwiZXhwIjoxNzk0MTg4NjExfQ.C0udDOQK4OQb_AwOIDjmAEu2UaT3PxKYDrH3ya2FVMM",
+  "refreshToken": "8857e48160ff2830e5463c822bb3493e7c14380a0adb96e9e32323f5d1283229f574729c3960a311"
+}

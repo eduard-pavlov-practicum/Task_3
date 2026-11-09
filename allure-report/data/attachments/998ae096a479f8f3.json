@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "januarikovalev@gmail.com",
+    "name": "Юлий"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjExZThkNWU5MWNhMDAxYjIzOTQ0MSIsImlhdCI6MTc5NDE4Njg5MywiZXhwIjoxNzk0MTg4MDkzfQ.vaHFQpr8R-jSUSIEGU2Hv60Xn7_m84MJZBu8mImDjvQ",
+  "refreshToken": "af724da25e076a7e97df4ce289e7c276a40a421f00b63c644d44f1202ea88073e70d5a29b334bfaa"
+}

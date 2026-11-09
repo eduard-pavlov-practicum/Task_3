@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "jaroslav_2017@mail.ru",
+    "name": "Мстислав"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjEyMGQzNWU5MWNhMDAxYjIzOTQ3NSIsImlhdCI6MTc5NDE4NzQ3NSwiZXhwIjoxNzk0MTg4Njc1fQ.4CFbPbvoIxtocAyAOSX2r3RpvIWNZBvnopEjBbpGntA",
+  "refreshToken": "fd60d3e42ed3535308730919003196a0e6073f5f52df494a2b266ee80e755011add3e0302ca01bed"
+}
