@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "porfiriharitonov@yandex.ru",
+    "name": "Модест"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMTRlNWU5MWNhMDAxYjIzOTgyYSIsImlhdCI6MTc5NDI1MzEzNCwiZXhwIjoxNzk0MjU0MzM0fQ.is0b6HulhzMpQn3dv04Pdyhrs-kpxyg7INfYB1hAlKs",
+  "refreshToken": "61bedd407fb66dfa9eb82e7eb0cd682be67f14247069866841b004b64136df05def3f2217a2c7aeb"
+}

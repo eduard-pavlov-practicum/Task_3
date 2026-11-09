@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "ribakovaviktorija@yahoo.com",
+    "name": "Светлана"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjNmNWU5MWNhMDAxYjIzOTg2MSIsImlhdCI6MTc5NDI1MzM3NSwiZXhwIjoxNzk0MjU0NTc1fQ.f2BzgnhlocHSEyQav63ulCG4XJX1wu9hG4MVzzorVXU",
+  "refreshToken": "1d4ccf4104847265df24c99660a78c3f4e871e195c66ef210ebacba60d1d559f954968c80db4466f"
+}

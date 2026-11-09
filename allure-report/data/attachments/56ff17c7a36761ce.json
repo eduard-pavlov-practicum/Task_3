@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "kirablinova@yandex.ru",
+    "name": "Октябрина"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjA0NWU5MWNhMDAxYjIzOTg0YSIsImlhdCI6MTc5NDI1MzMxNiwiZXhwIjoxNzk0MjU0NTE2fQ.YnbbYCCpupfLfPmdkEUO1C2FhCV7SiP7TCrv2Y0GvMY",
+  "refreshToken": "1a007d599e7909cfda011cb8113927dbedc1bfee31fe2d29725ea3bc75d0d405d472fefcd9a341aa"
+}

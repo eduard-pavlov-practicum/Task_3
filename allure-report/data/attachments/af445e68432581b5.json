@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "eduard1992@yandex.ru",
+    "name": "Егор"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMTY3NWU5MWNhMDAxYjIzOTgzMSIsImlhdCI6MTc5NDI1MzE1OSwiZXhwIjoxNzk0MjU0MzU5fQ.gX3wK-cgQTfDER_RefRdWu4VwH9b7QXtUIRq_LGQSFI",
+  "refreshToken": "b4f152041ad7754439c2b6ec3c1c4b2ef4e7c5c7ec9691db1a471189db3d8d9315add38f9571a538"
+}

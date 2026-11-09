@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "kondrati_1979@mail.ru",
+    "name": "Антип"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjMzNWU5MWNhMDAxYjIzOTg1YiIsImlhdCI6MTc5NDI1MzM2MywiZXhwIjoxNzk0MjU0NTYzfQ.ZBo43-WtJleXCWGC4yFmBAiNxJ6gkgGfo3dZ22xJqGE",
+  "refreshToken": "e24ba4e4160aebfcb1e0928048b7614f8e3d00035f6efdd662f7be17af0e8b1193b6c8ba9b082e5d"
+}

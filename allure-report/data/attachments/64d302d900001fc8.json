@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "ignatovboris@yandex.ru",
+    "name": "Наркис"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjFlNWU5MWNhMDAxYjIzOTg1OCIsImlhdCI6MTc5NDI1MzM0MiwiZXhwIjoxNzk0MjU0NTQyfQ.INPQGxnhc8dWMDdVt3TdyKEl0NMpxbRpdQ2M3AYZdt8",
+  "refreshToken": "c9257daad9698f866211e421be92ec4ee0578fccc176665a20f127959c1a9410b657545d2ea54b11"
+}

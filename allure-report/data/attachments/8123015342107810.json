@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "valentinafadeeva@mail.ru",
+    "name": "Святополк"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMjBjNWU5MWNhMDAxYjIzOTg0ZSIsImlhdCI6MTc5NDI1MzMyNCwiZXhwIjoxNzk0MjU0NTI0fQ.pYzF913um7fEY4KafBc6tjx4s_nMv8SF79baMeDAu4k",
+  "refreshToken": "bdaeeb1b163e7c3c06900e4f54315ecdb6dd3c31747ef9a5e20a9fe852d8a069a2bfc36a00daacba"
+}

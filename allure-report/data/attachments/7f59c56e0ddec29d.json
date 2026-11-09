@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "ershovamaja@hotmail.com",
+    "name": "Порфирий"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMTU5NWU5MWNhMDAxYjIzOTgyZCIsImlhdCI6MTc5NDI1MzE0NSwiZXhwIjoxNzk0MjU0MzQ1fQ.gqIGPXU-tXwWUBBLowBIfJmsJbVztOByZ_OKp6WZclM",
+  "refreshToken": "2b76d78214ac78394097fbed32da7c5695ea1e83de43d49d09326bc4bbd7bd41ec6a456cdfc8da20"
+}

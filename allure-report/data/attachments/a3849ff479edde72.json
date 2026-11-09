@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "chernovfoma@hotmail.com",
+    "name": "Наина"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMWZmNWU5MWNhMDAxYjIzOTg0NyIsImlhdCI6MTc5NDI1MzMxMSwiZXhwIjoxNzk0MjU0NTExfQ.UIzXfSsk4I6BSwE7heYPci19T1neGnmmXBoWcET-zLk",
+  "refreshToken": "7f7cd0e4917218148a4022073e723378533a7bdd881b7b7a239bc26d9eec5e1da532fd2effbb0ff7"
+}

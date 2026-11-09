@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "irinaisaeva@yandex.ru",
+    "name": "Лев"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMTg0NWU5MWNhMDAxYjIzOTgzOCIsImlhdCI6MTc5NDI1MzE4OCwiZXhwIjoxNzk0MjU0Mzg4fQ.W5AQf3lXN-5cx02NV6sJOk_x5kd3EqRCQRi5SNnBxOQ",
+  "refreshToken": "1e65977489baff42a1c90a3e90cff88ecbe3b0c3933c8152c5c7d9bd6cdeb10419cc6cc609a3915a"
+}

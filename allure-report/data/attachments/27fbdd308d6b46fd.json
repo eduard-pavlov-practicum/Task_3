@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "nikola1971@mail.ru",
+    "name": "Савва"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZjIyMTdhNWU5MWNhMDAxYjIzOTgzNSIsImlhdCI6MTc5NDI1MzE3OCwiZXhwIjoxNzk0MjU0Mzc4fQ.XF2r_b5FwmTj_NN-BFSnbiosMrClva7qsjBngo9kRy8",
+  "refreshToken": "2851cde45fd1e31a2e4aeb0bd19030030a76e4ebfd45e306148ea0e49e71994787cb8dcf3d6b30c6"
+}
